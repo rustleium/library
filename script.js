@@ -6,3 +6,10 @@ function Book(title, author, pages, readStatus) {
   this.pages = pages;
   this.readStatus = readStatus;
 }
+
+function addBookToLibrary(title, author, pages, readStatus) {
+  const newBook = new Book(title, author, pages, readStatus);
+  myLibrary.push(newBook);
+}
+
+addBookToLibrary('Demian', "Hermann Hesse", 175, "Not Read");
