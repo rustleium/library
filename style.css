@@ -5,12 +5,27 @@
 }
 
 .library-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  width: 100%;
-  justify-items: center;
-  gap: 10px;
+  width: 80%;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+th, td {
+  border: 2px solid black;
   padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+th:first-child, td:first-child {
+  width: 150px;
+}
+
+tr:not(:first-child) td:first-child {
+  height: 200px;
 }
 
 .book-card {
