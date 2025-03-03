@@ -37,6 +37,7 @@ displayBooks();
 const addNewBookBtn = document.querySelector(".new-book");
 const formDialog = document.getElementById("formDialog");
 const cancelBtn = document.getElementById("cancelBtn");
+const bookForm = document.getElementById("bookForm");
 
 addNewBookBtn.addEventListener("click", () => {
   formDialog.showModal();
@@ -48,4 +49,10 @@ cancelBtn.addEventListener("click", () => {
 
 window.addEventListener("load", () => {
   alert("Page Reloads");
+})
+
+bookForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  console.log("Page does not reload on form submit now.");
+  formDialog.close();
 })
