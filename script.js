@@ -34,3 +34,15 @@ function displayBooks() {
 }
 
 displayBooks();
+
+const addNewBookBtn = document.querySelector(".new-book");
+const formDialog = document.getElementById("formDialog");
+const cancelBtn = document.getElementById("cancelBtn");
+
+addNewBookBtn.addEventListener("click", () => {
+  formDialog.showModal();
+})
+
+cancelBtn.addEventListener("click", () => {
+  formDialog.close();
+})
