@@ -45,3 +45,7 @@ addNewBookBtn.addEventListener("click", () => {
 cancelBtn.addEventListener("click", () => {
   formDialog.close();
 })
+
+window.addEventListener("load", () => {
+  alert("Page Reloads");
+})
