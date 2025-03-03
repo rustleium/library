@@ -21,7 +21,6 @@ function displayBooks() {
     const bookRow = document.createElement("tr");
     bookRow.innerHTML =
       `
-        <td>${book.cover}</td>
         <td>${book.title}</td>
         <td>${book.author}</td>
         <td>${book.pages}</td>

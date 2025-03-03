@@ -24,10 +24,6 @@ th:first-child, td:first-child {
   width: 150px;
 }
 
-tr:not(:first-child) td:first-child {
-  height: 200px;
-}
-
 .book-card {
   border: 2px solid black;
   border-radius: 5px;
