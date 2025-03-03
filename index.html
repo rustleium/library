@@ -24,6 +24,33 @@
     </tbody>
   </table>
 
+  <dialog id="formDialog">
+    <form id="bookForm">
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" required>
+
+      <label for="author">Author:</label>
+      <input type="text" id="author" name="author" required>
+
+      <label for="published">Published On:</label>
+      <input type="number" id="published" name="published" required>
+
+      <label for="pages">Pages:</label>
+      <input type="number" id="pages" name="pages" required>
+
+      <label>Read Status:</label>
+      <div>
+        <input type="radio" id="read" name="readStatus" value="Read" required>
+        <label for="read">Read</label>
+
+        <input type="radio" id="not-read" name="readStatus" value="Not Read">
+        <label for="not-read">Not Read</label>
+      </div>
+
+      <button type="submit">Add Book</button>
+      <button type="button" id="cancelBtn">Cancel</button>
+    </form>
+  </dialog>
   <script src="script.js"></script>
 </body>
 </html>
