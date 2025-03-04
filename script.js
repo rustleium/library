@@ -46,11 +46,13 @@ submitFormBtn.addEventListener("click", () => {
     formData.published, 
     formData.readStatus
   );
+  displayBooks();
 });
 
 function displayBooks() {
+  const tableBody = document.querySelector('.book-list');
+  tableBody.innerHTML = "";
   myLibrary.forEach((book, index) => {
-    const tableBody = document.querySelector('.book-list');
     const bookRow = document.createElement("tr");
     bookRow.setAttribute("data-id", index);
     bookRow.innerHTML =
