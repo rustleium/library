@@ -52,10 +52,6 @@ cancelBtn.addEventListener("click", () => {
   formDialog.close();
 })
 
-window.addEventListener("load", () => {
-  alert("Page Reloads");
-})
-
 bookForm.addEventListener("submit", (event) => {
   event.preventDefault();
   console.log("Page does not reload on form submit now.");
