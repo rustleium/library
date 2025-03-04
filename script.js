@@ -16,9 +16,10 @@ function addBookToLibrary(title, author, pages, published, readStatus) {
 addBookToLibrary('Demian', "Hermann Hesse", 175, 1919, "Not Read");
 
 function displayBooks() {
-  myLibrary.forEach((book) => {
+  myLibrary.forEach((book, index) => {
     const tableBody = document.querySelector('.book-list');
     const bookRow = document.createElement("tr");
+    bookRow.setAttribute("data-id", index);
     bookRow.innerHTML =
       `
         <td>${book.title}</td>
