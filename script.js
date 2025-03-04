@@ -38,7 +38,14 @@ function getFormValues() {
 const submitFormBtn = document.querySelector('button[type="submit"]');
 
 submitFormBtn.addEventListener("click", () => {
-
+  const formData = getFormValues();
+  addBookToLibrary(
+    formData.title,
+    formData.author, 
+    formData.pages, 
+    formData.published, 
+    formData.readStatus
+  );
 });
 
 function displayBooks() {
