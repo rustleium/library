@@ -25,12 +25,20 @@ function getFormValues() {
   const authorInput = document.getElementById("author").value;
   const publishedInput = document.getElementById("published").value;
   const readStatusInput = document.querySelector('input[name="readStatus"]:checked').value;
+
+  return {
+    pages: pagesInput,
+    title: titleInput,
+    author: authorInput,
+    published: publishedInput,
+    readStatus: readStatusInput,
+  };
 }
 
 const submitFormBtn = document.querySelector('button[type="submit"]');
 
 submitFormBtn.addEventListener("click", () => {
-  
+
 });
 
 function displayBooks() {
