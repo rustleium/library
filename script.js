@@ -27,6 +27,12 @@ function getFormValues() {
   const readStatusInput = document.querySelector('input[name="readStatus"]:checked').value;
 }
 
+const submitFormBtn = document.querySelector('button[type="submit"]');
+
+submitFormBtn.addEventListener("click", () => {
+  
+});
+
 function displayBooks() {
   myLibrary.forEach((book, index) => {
     const tableBody = document.querySelector('.book-list');
