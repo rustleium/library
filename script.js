@@ -14,6 +14,10 @@ function addBookToLibrary(title, author, pages, published, readStatus) {
 }
 
 addBookToLibrary('Demian', "Hermann Hesse", 175, 1919, "Not Read");
+addBookToLibrary('Brave New World', "Aldous Huxley", 311, 1932, "Not Read");
+addBookToLibrary('1984', "George Orwell", 328, 1949, "Read");
+addBookToLibrary('Siddhartha', "Hermann Hesse", 152, 1922, "Not Read");
+addBookToLibrary('Dune', "Frank Herbert", 412, 1965, "Read");
 
 function displayBooks() {
   myLibrary.forEach((book, index) => {
