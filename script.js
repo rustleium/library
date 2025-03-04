@@ -19,6 +19,14 @@ addBookToLibrary('1984', "George Orwell", 328, 1949, "Read");
 addBookToLibrary('Siddhartha', "Hermann Hesse", 152, 1922, "Not Read");
 addBookToLibrary('Dune', "Frank Herbert", 412, 1965, "Read");
 
+function getFormValues() {
+  const pagesInput = document.getElementById("pages").value;
+  const titleInput = document.getElementById("title").value;
+  const authorInput = document.getElementById("author").value;
+  const publishedInput = document.getElementById("published").value;
+  const readStatusInput = document.querySelector('input[name="readStatus"]:checked').value;
+}
+
 function displayBooks() {
   myLibrary.forEach((book, index) => {
     const tableBody = document.querySelector('.book-list');
