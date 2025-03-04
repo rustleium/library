@@ -47,6 +47,7 @@ submitFormBtn.addEventListener("click", () => {
     formData.readStatus
   );
   displayBooks();
+  bookForm.reset();
 });
 
 function displayBooks() {
