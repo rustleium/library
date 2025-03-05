@@ -90,6 +90,10 @@ bookForm.addEventListener("submit", (event) => {
   formDialog.close();
 })
 
+Book.prototype.toggleReadStatus = function() {
+  this.readStatus = this.readStatus === "Not Read" ? "Read" : "Not Read";
+}
+
 const toggleStatusButtons = document.querySelectorAll(".read-status");
 
 toggleStatusButtons.forEach(toggleBtn => {
@@ -97,6 +101,8 @@ toggleStatusButtons.forEach(toggleBtn => {
     toggleBtn.textContent = toggleBtn.textContent === "Read" ? "Not Read" : "Read";
     const grandParent = toggleBtn.parentElement.parentElement;
     const index = grandParent.getAttribute("data-id");
+    console.log(myLibrary[index]);
+    myLibrary[index].toggleReadStatus();
     console.log(myLibrary[index]);
   });
 });
