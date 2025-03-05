@@ -115,6 +115,6 @@ const deleteBtns = document.querySelectorAll(".deleteBtn");
 deleteBtns.forEach(deleteBtn => {
   deleteBtn.addEventListener("click", () => {
   const parentBookRow = deleteBtn.parentElement.parentElement;
-  console.log(parentBookRow);
+  parentBookRow.remove();
   });
 });
