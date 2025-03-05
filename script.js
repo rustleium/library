@@ -109,3 +109,11 @@ toggleStatusButtons.forEach(toggleBtn => {
     console.log(myLibrary[index]);
   });
 });
+
+const deleteBtns = document.querySelectorAll(".deleteBtn");
+
+deleteBtns.forEach(deleteBtn => {
+  deleteBtn.addEventListener("click", () => {
+    
+  });
+});
