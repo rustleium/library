@@ -95,5 +95,8 @@ const toggleStatusButtons = document.querySelectorAll(".read-status");
 toggleStatusButtons.forEach(toggleBtn => {
   toggleBtn.addEventListener("click", () => {
     toggleBtn.textContent = toggleBtn.textContent === "Read" ? "Not Read" : "Read";
+    const grandParent = toggleBtn.parentElement.parentElement;
+    const index = grandParent.getAttribute("data-id");
+    console.log(myLibrary[index]);
   });
 });
