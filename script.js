@@ -89,3 +89,11 @@ bookForm.addEventListener("submit", (event) => {
   console.log("Page does not reload on form submit now.");
   formDialog.close();
 })
+
+const toggleStatusButtons = document.querySelectorAll(".read-status");
+
+toggleStatusButtons.forEach(toggleBtn => {
+  toggleBtn.addEventListener("click", () => {
+    toggleBtn.textContent = toggleBtn.textContent === "Read" ? "Not Read" : "Read";
+  });
+});
