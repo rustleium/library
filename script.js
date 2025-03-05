@@ -62,7 +62,7 @@ function displayBooks() {
         <td>${book.author}</td>
         <td>${book.pages}</td>
         <td>${book.published}</td>
-        <td>${book.readStatus}</td>
+        <td><button class="read-status">${book.readStatus}</button></td>
       `
     tableBody.appendChild(bookRow);
 
